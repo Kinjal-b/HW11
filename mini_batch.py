@@ -43,6 +43,8 @@ if __name__ == "__main__":
     batch_size = 64  # Example batch size
     mini_batches = create_mini_batches(X, y, batch_size)
     
+    # The output confirms the creation of 16 mini-batches, each with the correct dimensions for both features and labels, demonstrating the functionality of the mini-batch creation process
+
     print(f"Total mini-batches created: {len(mini_batches)}")
     print(f"First mini-batch feature shape: {mini_batches[0][0].shape}")
     print(f"First mini-batch label shape: {mini_batches[0][1].shape}")
